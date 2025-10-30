@@ -6,41 +6,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taco Shop</title>
+    <title>The Taco Shop</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>Welcome To The TACO SHOP</h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#about">About <abbr title="Taco Shop">TS</abbr></a>
-        </li>
-        <li>
-          <a href="#menu">Our Menu</a>
-        </li>
-        <li>
-          <a href="hours.htm">Store Hours</a>
-        </li>
-        <li>
-          <a href="contact.html"
-            >Contact Us <abbr title="Taco Shop">TS</abbr></a
-          >
-        </li>
-      </ul>
-    </nav>
-    <figure>
-      <img
-        src="image/tacos_and_drink_400x267.png"
-        alt="Tacos and drink image"
-        width="400"
-        height="267"
-        title="Tacos and drink image"
-      />
-      <figcaption>Tacos and a Drink</figcaption>
-    </figure>
+    <header>
+      <h1>Welcome To The Taco Shop</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About <abbr title="Taco Shop">TS</abbr></a>
+          </li>
+          <li>
+            <a href="#menu">Our Menu</a>
+          </li>
+          <li>
+            <a href="hours.htm">Store Hours</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <figure>
+        <img
+          src="image/tacos_and_drink_400x267.png"
+          alt="Tacos and drink image"
+          width="400"
+          height="267"
+          title="Tacos and a Drink"
+        />
+        <figcaption>Tacos and a Drink</figcaption>
+      </figure>
+    </header>
+
     <hr />
+
     <main>
       <article id="about">
         <h2>About Taco Shop</h2>
@@ -55,13 +69,15 @@
             <summary>When did tacos first appear in the United States?</summary>
             <p>
               The Taco was first introduced to the United States in
-              <time datetime="1905">1905</time>1905. Mexican migrants were
-              coming in to work on railroads and other jobs and started to bring
-              their delicious food with them. Tacos were essentially a street
-              food at this time since they were highly portable and
-              cheap.(Source:
+              <time datetime="1905">1905</time>. Mexican migrants were coming in
+              to work on railroads and other jobs and started to bring their
+              delicious food with them. Tacos were essentially a street food at
+              this time since they were highly portable and cheap. (Source:
               <cite
-                ><a href="https://en.wikipedia.org/wiki/Taco"
+                ><a
+                  href="https://en.wikipedia.org/wiki/Taco"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Learn more about tacos</a
                 ></cite
               >)
@@ -69,55 +85,64 @@
           </details>
         </aside>
       </article>
+
       <hr />
+
       <article id="menu">
         <h2>Our Menu</h2>
         <table>
           <caption>
             Our Tacos
           </caption>
-          <tr>
-            <th>Tacos</th>
-            <th>Qty</th>
-            <th>Price</th>
-          </tr>
-          <tr>
-            <th rowspan="3">Crunchy</th>
-            <td>1</td>
-            <td>$1.50</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>$2.50</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>$3.50</td>
-          </tr>
-          <tr>
-            <th rowspan="3">Soft</th>
-            <td>1</td>
-            <td>$2.00</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>$3.50</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>4.50</td>
-          </tr>
-          <tr>
-            <td colspan="3">Chips & Salsa $2</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Tacos</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="3">Crunchy</th>
+              <td>1</td>
+              <td>$1.50</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>$2.50</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>$3.50</td>
+            </tr>
+            <tr>
+              <th rowspan="3">Soft</th>
+              <td>1</td>
+              <td>$2.00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>$3.50</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>$4.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Chips & Salsa $2</td>
+            </tr>
+          </tfoot>
         </table>
       </article>
-      <br />
-      <p>
-        <a href="#">Back to Top</a>
+      <p style="text-align: center">
+        <a href="#" class="back-to-top">Back to Top</a>
       </p>
     </main>
+
     <hr />
+
     <footer>
       <p>Copyright &copy; The Taco Shop</p>
     </footer>
